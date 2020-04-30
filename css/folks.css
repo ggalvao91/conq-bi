@@ -1,0 +1,148 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #FFFFFF;
+	opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #FFFFFF;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+	color: #FFFFFF;
+  }
+  
+  *{color: #FFFFFF;}
+  body{
+	  background-color: rgb(7,7,9);
+	  width: 1366px;
+	  height: 600px;
+	  text-align: center;
+  }
+  img{
+	  position: absolute;
+	  left: 500px;
+	  top: 100px;
+	  width: 420px;
+	  height: 400px;
+  }
+  .titulo {
+	  position: absolute;
+	  right: 180px;
+	  width: 445px;
+	  top: 150px;
+	  font-family: 'DM Sans';font-size: 60px;
+	  font-weight: bold;
+  }
+  .bgg{
+	  background: #0A0909;
+	  position: absolute;
+	  right: 0px;
+	  width: 810px;
+	  top: 100px;
+	  height: 500px;
+	  z-index: -1;
+  }
+  .form-container{
+	  position: absolute;
+	  right: 0px;
+	  height: 500px;
+	  width: 810px;
+	  top: 100px;
+	  padding-top: 250px;
+	  padding-left: 240px;
+	  padding-right: 200px;
+	  padding-bottom: 0px;
+	  z-index: +1;
+  }
+  @media (max-width: 1200px){
+	  body{
+		  background-color: rgb(27,27,27);
+		  text-align: center;
+		  width: 100%;
+		  height: auto;
+	  }
+	  img {
+	  display: none;
+	  }
+  }
+  @media (max-width: 650px){
+	  .titulo {
+		  position: absolute;
+		  left: 120px;
+		  width: 250px;
+		  height: 0vh;
+		  font-family: 'DM Sans';font-size: 40px;
+		  font-weight: bold;
+	  }
+	  .bgg{
+		  background: #2A2A2A;
+		  width: 440px;
+		  position: absolute;
+		  left: 20px;
+		  height: 70vh;
+		  z-index: -1;
+	  }
+	  .form-container{
+		  position: absolute;
+		  left: -200px;
+		  width: 830px;;
+		  z-index: +1;
+	  }
+  }
+  .p2 {
+	  text-decoration:line-through;
+	  color: #FFE607;
+  }
+  .p3 {
+	  color: #FFFFFF;
+  } 
+  .p4 {
+	  color: #FFE607;
+  }
+  
+  .input-container {
+	  display: flex;
+	  width: 100%;
+	  margin-bottom: 15px;
+  }
+  
+  .icon {
+	  position: relative;
+	  padding-top: 5px;
+	  color: #FFE607;
+	  width: 30px;
+	  text-align: center;
+	  border-bottom: 1px solid #FFE607;
+  }
+  
+  .fc1{
+	  position: relative;
+	  padding-bottom: 5px;
+	  text-align: left;
+	  background-color: transparent;
+	  border: none;
+	  width: 100%;
+	  border-bottom: 1px solid #FFE607;
+	  font-family: 'DM Sans';
+	  font-size: 16px;
+  }
+  
+  .fc2{
+	  position: relative;
+	  padding-bottom: 5px;
+	  text-align: left;
+	  background-color: transparent;
+	  border: none;
+	  width: 100%;
+	  border-bottom: 1px solid #FFE607;
+	  font-family: 'DM Sans';
+	  font-size: 16px;
+  }
+  
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active  {
+	  -webkit-box-shadow: 0 0 0 30px #2A2A2A inset !important;
+	  -webkit-text-fill-color: #FFFFFF !important;
+  }

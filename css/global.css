@@ -1,0 +1,242 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #FFFFFF;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #FFFFFF;
+}
+
+*{color: #FFFFFF;}
+body{
+	background-color: rgb(27,27,27);
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+.logo{
+	background: url('../images/logoconquer.png') no-repeat;
+	position: absolute;
+	left: 630px;
+	top: 20px;
+	right: 20px;
+	height: 75px;	
+	z-index: +1;
+}
+.header {
+	background: #0A0909;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 20px;
+	height: 75px;
+}
+img{
+	position: absolute;
+	left: -20px;
+	top: 110px;
+	width: 630px;
+	height: 400px;
+}
+.titulo {
+	position: absolute;
+	right: 180px;
+	width: 450px;
+	top: 120px;
+	font-family: 'DM Sans';font-size: 60px;
+	font-weight: bold;
+}
+.text1 {
+	position: absolute;
+	left: 50px;
+	width: 140px;
+	top: 510px;
+	font-family: 'DM Sans';font-size: 18px;
+	font-weight: regular;
+}
+.text2 {
+	position: absolute;
+	transform: rotate(-90deg);
+	left: 420px;
+	height: 130px;
+	line-height: 60px;
+	text-align: left;
+	width: 210px;
+	top: 430px;
+	font-family: 'DM Sans';font-size: 60px;
+	font-weight: bold;
+}
+.bgg{
+	background: #2A2A2A;
+	position: absolute;
+	right: 0px;
+	width: 810px;
+	top: 100px;
+	height: 500px;
+	z-index: -1;
+}
+.form-container{
+	position: absolute;
+	right: 0px;
+	height: 500px;
+	width: 810px;
+	top: 100px;
+	padding-top: 250px;
+	padding-left: 240px;
+	padding-right: 200px;
+	padding-bottom: 0px;
+	z-index: +1;
+}
+.submit{
+	background: url('../images/submit.png') no-repeat;
+	border-style: none;
+	position: absolute;
+	right: 120px;
+	width: 60px;
+	height: 54px; 
+	top: 400px;
+	text-align: center;
+}
+.submit:hover {
+	background-color: #B1B1B1;
+	opacity: 0.7;
+	cursor: pointer;
+}
+@media (max-width: 1200px){
+	body{
+		background-color: rgb(27,27,27);
+		text-align: center;
+		width: 100%;
+		height: auto;
+	}
+	img {
+	display: none;
+	}
+	.text1{
+		display: none;
+	}
+	.text2{
+		display: none;
+	}
+}
+@media (max-width: 650px){
+	.bg{
+		background: url('../images/header.png') no-repeat;
+		position: absolute;
+		background-size: 100%;
+		background-position: 0px 0px;
+	}
+	.logo{
+		position: absolute;
+		left: 230px;
+		width: 250px;
+		height: 155px;
+	}
+	.titulo {
+		position: absolute;
+		left: 120px;
+		width: 250px;
+		height: 155px;
+		font-family: 'DM Sans';font-size: 40px;
+		font-weight: bold;
+	}
+	.bgg{
+		background: #2A2A2A;
+		width: 460px;
+		position: absolute;
+		left: 20px;
+		height: 70vh;
+		z-index: -1;
+	}
+	.form-container{
+		position: absolute;
+		padding: 0;
+		left: 50px;
+		top: 350px;
+		width: 380px;
+		height: 80px;
+		z-index: +1;
+	}
+	.submit{
+		background: url('../images/submit.png') no-repeat;
+		border-style: none;
+		position: absolute;
+		right: 0px;
+		width: 60px;
+		height: 54px; 
+		top: 100px;
+		text-align: center;
+	}
+}
+.p2 {
+	text-decoration:line-through;
+	color: #FFE607;
+}
+.p3 {
+	color: #FFFFFF;
+} 
+.p4 {
+	color: #FFE607;
+}
+
+.input-container {
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.icon {
+	position: relative;
+	padding-top: 5px;
+	color: #FFE607;
+	width: 30px;
+	text-align: center;
+	border-bottom: 1px solid #FFE607;
+}
+
+.fc1{
+	position: relative;
+	padding-bottom: 5px;
+	text-align: left;
+    background-color: transparent;
+    border: none;
+	width: 100%;
+    border-bottom: 1px solid #FFE607;
+	font-family: 'DM Sans';
+	font-size: 16px;
+}
+
+.fc2{
+	position: relative;
+	padding-bottom: 5px;
+	text-align: left;
+    background-color: transparent;
+    border: none;
+	width: 100%;
+    border-bottom: 1px solid #FFE607;
+	font-family: 'DM Sans';
+	font-size: 16px;
+}
+
+.fc3{
+	position: relative;
+	padding-bottom: 5px;
+	text-align: left;
+    background-color: transparent;
+    border-style: none;
+	width: 100%;
+	font-family: 'DM Sans';
+	font-size: 14px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #2A2A2A inset !important;
+	-webkit-text-fill-color: #FFFFFF !important;
+}
